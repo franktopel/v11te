@@ -1,0 +1,34 @@
+{
+  "name": "eleventy-with-vite",
+  "version": "1.0.0",
+  "description": "A demo or template for integrating a Vite build with Eleventy",
+  "author": "Fotis Papadogeorgopoulos (fotis@fpapado.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fpapado/eleventy-with-vite"
+  },
+  "bugs": {
+    "url": "https://github.com/fpapado/eleventy-with-vite"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@vitejs/plugin-legacy": "^1.6.4",
+    "concurrently": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "sass": "^1.49.7",
+    "serve": "^13.0.2",
+    "vite": "^2.7.12"
+  },
+  "scripts": {
+    "dev": "concurrently npm:dev:*",
+    "dev:eleventy": "eleventy --serve",
+    "dev:vite": "vite",
+    "build": "npm run build:vite && npm run build:eleventy",
+    "build:eleventy": "cross-env NODE_ENV=production eleventy",
+    "build:vite": "cross-env NODE_ENV=production vite build",
+    "prod": "cross-env NODE_ENV=production npm run build && serve _site"
+  }
+}
