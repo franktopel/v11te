@@ -1,4 +1,14 @@
-Based off https://github.com/fpapado/eleventy-with-vite
+Based off https://github.com/fpapado/eleventy-with-vite, with the following changes so far:
+
+- added `cross-env` dev dependency to make the Windows folks happy.
+- Updated all dependencies, including updating **11ty* to `1.0.0`
+- added an example web component `<foo-bar>` to see if the JS part works.
+- moved all files related to 11ty to `/src/11ty/` and adjusted config files accordingly.
+- Changed the example CSS to SCSS.
+
+Known problems:
+
+- As of now, the production build doesn't work on my windows machine; it complains Vite cannot find the entrypoint `/src/client/main.js`.
 
 # Eleventy with Vite
 
@@ -8,7 +18,7 @@ This main branch uses plain JS, as well as the Vite plugin for legacy scripts. T
 
 ## Pre-requisites
 
-You will need [Node](https://nodejs.org/en/download/) and npm installed. npm typically comes installed with node. I recommend [using a version manager, such as nvm, to manage your node installation](https://github.com/nvm-sh/nvm)
+You will need [Node](https://nodejs.org/en/download/) and `npm` installed. npm typically comes installed with node. I recommend [using a version manager, such as nvm, to manage your node installation](https://github.com/nvm-sh/nvm)
 
 ## How to build
 
@@ -69,7 +79,7 @@ Production:
 - Vite takes the entry point (`src/client/main.js`, specified in `vite.config.js`), and builds the app from there. It outputs it under `_site/assets`, as specified in `vite.config.js`
 - Vite outputs a manifest (a JSON file mapping scripts to their output, and auxiliary information) to `_site/manifest.json`
 - Eleventy runs
-- As Eleventy processes each page with the base template, a custom Eleventy shortcode (`viteScriptTag`) reads `_site/manifest.json`, finds the entry point specified, and injects its output script as script[type="module"]
+- As Eleventy processes each page with the base template, a custom Eleventy shortcode (`viteScriptTag`) reads `_site/manifest.json`, finds the entry point specified, and injects its output script as `script[type="module"]`
 - Once done, things should work!
 
 You can test this out shortly with `npm run prod`, to simulate a production-parity build and run.
