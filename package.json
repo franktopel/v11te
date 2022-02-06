@@ -1,15 +1,15 @@
 {
   "name": "eleventy-with-vite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A demo or template for integrating a Vite build with Eleventy",
   "author": "Fotis Papadogeorgopoulos (fotis@fpapado.com)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fpapado/eleventy-with-vite"
+    "url": "git@github.com:franktopel/v11te.git"
   },
   "bugs": {
-    "url": "https://github.com/fpapado/eleventy-with-vite"
+    "url": "https://github.com/franktopel/v11te/issues"
   },
   "main": "index.js",
   "devDependencies": {
