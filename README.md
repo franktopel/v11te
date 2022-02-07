@@ -1,14 +1,14 @@
 Based off https://github.com/fpapado/eleventy-with-vite, with the following changes so far:
 
 - added `cross-env` dev dependency to make the Windows folks happy.
-- Updated all dependencies, including updating **11ty* to `1.0.0`
+- Updated all dependencies, including updating **11ty** to `1.0.0`
 - added an example web component `<foo-bar>` to see if the JS part works.
 - moved all files related to 11ty to `/src/11ty/` and adjusted config files accordingly.
 - Changed the example CSS to SCSS.
 
 Known problems:
 
-- As of now, the production build doesn't work on my windows machine; it complains Vite cannot find the entrypoint `/src/client/main.js`.
+- As of now, the production build doesn't work on my Windows machine; it complains that Vite cannot find the entrypoint `/src/client/main.js`.
 
 # Eleventy with Vite
 
