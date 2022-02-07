@@ -14,11 +14,11 @@ Known problems:
 
 This is a template (or demo) for integrating [Vite](https://vitejs.dev) with [Eleventy](https://www.11ty.dev/). This allows you to use Vite for its very fast bundling of JS and assets for client-side scripts, while building the static pages (and anything related) with Eleventy.
 
-This main branch uses plain JS, as well as the Vite plugin for legacy scripts. To check out other possibilities (react, react with typescript), check out the branches of this repository.
+This main branch uses plain JS, as well as the Vite plugin for legacy scripts.
 
 ## Pre-requisites
 
-You will need [Node](https://nodejs.org/en/download/) and `npm` installed. npm typically comes installed with node. I recommend [using a version manager, such as nvm, to manage your node installation](https://github.com/nvm-sh/nvm)
+You will need [Node](https://nodejs.org/en/download/) and `npm` installed. npm typically comes installed with node. I recommend [using a version manager, such as nvm, to manage your node installation](https://github.com/nvm-sh/nvm) [nvm for Windows](https://github.com/coreybutler/nvm-windows)
 
 ## How to build
 
